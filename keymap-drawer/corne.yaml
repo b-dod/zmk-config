@@ -38,7 +38,7 @@ layers:
   - F
   - Shift
   - '&AppSwitch'
-  - {t: mm bspc del, h: '22'}
+  - {t: BACKSPACE, h: '22', s: DELETE}
   - {t: R, h: '23'}
   - {t: ␣, h: '20'}
   - {t: RETURN, h: '23'}
