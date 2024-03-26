@@ -7,7 +7,7 @@
 //|    Z   |    Q    | ScrCp | SelCp |   ESC   | |   ¢   |    $   |    €   |    £   |   ¥   |
 //|    <   |    [    |   (   |   {   |   TAB   | |   ¡   |    *   |    =   |    +   |   /   |
 //|    >   |    ]    |   )   |   }   |   RET   | |   _   |    |   |    &   |    ^   |   %   |
-//╰──────────────────╮       |  BKSP |   DEL   | |       |    °   |    ·   ╭────────────────╯
+//╰──────────────────╮       | dwdlt |  dwdrt  | |       |    °   |  ----- ╭────────────────╯
 //                   ╰─────────────────────────╯ ╰─────────────────────────╯
                 l_sym {
                     label = "l_sym";
@@ -15,7 +15,7 @@
 &none &kp Z &kp Q &kp LG(LS(N4)) &kp LG(LS(LC(N4))) &kp ESC             &kp RA(N4) &kp DLLR  &kp LA(LS(N2)) &kp LA(N3) &kp RA(Y)  &none
 &none &lk_ltgt GT LT  &lk_bkt RBKT LBKT &lk_par RPAR LPAR &lk_brc RBRC LBRC &kp TAB  &kp LA(N1) &mt RSHFT STAR  &mt RGUI EQUAL &mt RALT PLUS  &mt LCTRL FSLH   &none
 &none &kp GT  &kp RBKT &kp RPAR &kp RBRC &kp RETURN                     &kp MINUS  &kp PIPE  &kp AMPS     &kp CARET &kp PRCNT  &none
-                &kp LC(LG(TAB)) &kp LA(BSPC)   &kp LA(DEL)              &none      &kp LA(N0) &kp LA(LS(9))
+                &kp LC(LG(TAB)) &kp LA(BSPC)   &kp LA(DEL)              &none      &kp LA(N0) &trans
                     >;
                 };
 
@@ -40,19 +40,19 @@
 
 //                                         Fkey & Num Row (optimized)
 //╭────────────────────────────────────────────╮ ╭───────────────────────────────────────╮
-//|    F9   |  F10   |  F11   |  F12   |  F13  | |   `   |   6   |   7   |   8   |   \   |
-//|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14  | |   ,   |  S/1  |  G/5  |  A/9  |  C//  |
-//|    F1   |   F2   |   F3   |   F4   |  F15  | |   -   |   2   |   3   |   4   |   =   |
-//╰──────────────────╮        |  dwdlt | dwdrt | |   0   |   .   |   ;   ╭───────────────╯
+//|    F9   |  F10   |  F11   |  F12   |  F13  | |   /   |   6   |   7   |   8   |   -   |
+//|   C/F5  |  A/F6  |  G/F7  |  S/F8  |  F14  | |   *   |  S/4  |  G/5  |  A/6  |  C/+  |
+//|    F1   |   F2   |   F3   |   F4   |  F15  | |   ,   |   1   |   2   |   3   |   =   |
+//╰──────────────────╮        |  BKSP  |  DEL  | |   0   |   .   |   ;   ╭───────────────╯
 //                   ╰─────────────────────────╯ ╰───────────────────────╯
 
                     l_fun {
                         label = "l_fun";
                         bindings = <
 
-&none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp GRAVE &kp N7       &kp N8      &kp N9      &kp BSLH       &none
-&none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp CMMA  &mt RSHFT N1 &mt RGUI N2 &mt RALT N3 &mt LCTRL FSLH &none
-&none &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp MINUS &kp N4       &kp N5      &kp N6      &kp EQUAL      &none
+&none &kp F9       &kp F10     &kp F11      &kp F12      &kp F13 &kp KP_SLASH     &kp N7       &kp N8      &kp N9      &kp MINUS         &none
+&none &mt LCTRL F5 &mt LALT F6 &mt LGUI F7  &mt LSHFT F8 &kp F14 &kp KP_MULTIPLY  &mt RSHFT N4 &mt RGUI N5 &mt RALT N6 &mt LCTRL KP_PLUS &none
+&none &kp F1       &kp F2      &kp F3       &kp F4       &kp F15 &kp CMMA         &kp N1       &kp N2      &kp N3      &kp EQUAL         &none
                    &sl l_cfg   &kp BSPC     &kp DEL      &kp KP_N0    &kp DOT      &kp SEMI
                         >;
                 };
@@ -76,6 +76,12 @@
                 };
 
 //                                     Keyboard & System Settings
+//╭──────────────────────────────────────────────╮ ╭───────────────────────────────────────────╮
+//|  BT_3  |   BT_2  |  BT_1  |  BT_0  |  BT_CLR | |        |        |        |        |       |
+//|        |   NEXT  | PL_PAU | VOL_UP |  BRI_UP | |        |        |        |        |       |
+//|  BOOT  |   PREV  |  MUTE  | VOL_DN |  BRI_DN | |        |        |        |        |  BOOT |
+//╰──────────────────╮  RESET |        |  l_num  | |        |        |  RESET ╭────────────────╯
+//                   ╰───────────────────────────╯ ╰──────────────────────────╯
                     l_cfg {
                         label = "l_cfg";
                         bindings = <
