@@ -22,14 +22,14 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
     ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
             ╰─────────────╯ ╰─────────────╯
 */
-/*  Base (alpha) Layer  Hands Down Vibranium-vv
+/*  Base (alpha) Layer  Hands Down Vibranium-Vb
     Building for a 36/42 key board
-    ╭─────────────────────╮ ╭──────────────────────╮
-LT5 │  X   W   M   G  "[  │ │  #$  .:  ']   J   B  │ RT5
-LM5 │  S   C   N   T   K  | |  ,;   A   E   I   H  │ RM5
-LB5 │  V   P   L   D   /* │ │  -+   U   O   Y   F  │ RB5
-    ╰──────╮  App BSP  R  │ │  SPC RET  TAB ╭──────╯
-           ╰──────────────╯ ╰───────────────╯
+     ╭─────────────────────╮ ╭──────────────────────╮
+ESC  │  X   W   M   G   J  │ │  #$  .:  /*  "«  '»  │ BSP
+TAB  │  S   C   N   T   K  | |  ,;   A   E   I   H  │ Tg(Num)
+LSFT │  B   P   L   D   V  │ │  -+   U   O   Y   F  │ RSFT
+     ╰──────╮  App BSP  R  │ │  SPC RET TAB  ╭──────╯
+            ╰──────────────╯ ╰───────────────╯
 */
 #define LT0 5
 #define LT1 4

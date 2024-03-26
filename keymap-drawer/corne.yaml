@@ -38,7 +38,7 @@ layers:
   - F
   - Shift
   - '&AppSwitch'
-  - {t: BACKSPACE, h: '22', s: DELETE}
+  - {t: mm bspc del, h: '22'}
   - {t: R, h: '23'}
   - {t: ␣, h: '20'}
   - {t: RETURN, h: '23'}
@@ -902,7 +902,7 @@ layers:
   - LA(DEL)
   - {type: held}
   - LA(0)
-  - LA(LS(9))
+  - {t: ▽, type: trans}
   '21':
   - ''
   - KP NUM
@@ -953,11 +953,11 @@ layers:
   - F11
   - F12
   - F13
-  - '`'
+  - KP SLASH
   - '7'
   - '8'
   - '9'
-  - \
+  - '-'
   - ''
   - ''
   - {t: F5, h: Ctrl}
@@ -965,11 +965,11 @@ layers:
   - {t: F7, h: Gui}
   - {t: F8, h: Shift}
   - F14
-  - CMMA
-  - {t: '1', h: Shift}
-  - {t: '2', h: Gui}
-  - {t: '3', h: Alt}
-  - {t: /, h: Ctrl}
+  - KP MULTIPLY
+  - {t: '4', h: Shift}
+  - {t: '5', h: Gui}
+  - {t: '6', h: Alt}
+  - {t: KP PLUS, h: Ctrl}
   - ''
   - ''
   - F1
@@ -977,10 +977,10 @@ layers:
   - F3
   - F4
   - F15
-  - '-'
-  - '4'
-  - '5'
-  - '6'
+  - CMMA
+  - '1'
+  - '2'
+  - '3'
   - '='
   - ''
   - {t: '24', h: sticky}

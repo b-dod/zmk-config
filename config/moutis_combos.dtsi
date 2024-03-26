@@ -42,8 +42,8 @@ combos {
 //
 // control/modes
 //
-COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
-COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
+//COMBO_ANY(enmode, &kp LANG2,    LM3 LM2 LM1)
+//COMBO_ANY(jpmode, &kp LANG1,    RM1 RM2 RM3)
 COMBO_ANY(settings, &mo l_cfg,  RH1 RH2) // get the settings/media layer from anywhere
 COMBO_ANY(appswitch, &AppSwitch, LT1 LT0) // App switch
 COMBO_LAYER(docaps, &caps_word, LM2 LM1 RM1 RM2, l_alpha) // CAPSWORD
@@ -63,7 +63,7 @@ COMBO_LAYER(selword, &m_selword,  LB4 LB0, l_alpha)
 COMBO_ANY(undo, &kp LG(Z),      LB4 LB3)
 COMBO_ANY(redo, &kp LG(LS(Z)),  LB4 LB3 LB2)
 COMBO_ANY(copy, &lk LG(X) LG(C), LB3 LB2)
-COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB2 LB1)
+COMBO_ANY(pste, &lk LG(LS(LA(V))) LG(V), LB3 LB2 LB1)
 COMBO_LAYER(cloz, &kp LG(W),      LM3 LB3, l_alpha)
 COMBO_LAYER(new,  &kp LG(N),      LM2 LB2, l_alpha)
 COMBO_LAYER(open, &kp LG(O),      LM1 LB1, l_alpha)
@@ -88,8 +88,8 @@ COMBO_LAYER(typeNdash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_alpha) // N-dash 
 COMBO_LAYER(typeMdash, &kp LA(LS(MINUS)), RB0 RB2, l_alpha) // M-dash (minus)
 COMBO_LAYER(typeTilde, &kp TILDE,   RB1 RB4, l_alpha) // tilde (not dead key)
 
-COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
-COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
+//COMBO_LAYER(ligAE, &kp LA(APOS),    RM1 RB1, l_alpha) // ligature æ
+//COMBO_LAYER(ligOE, &kp LA(Q),       RM2 RB2, l_alpha) // ligature œ
 
 COMBO_LAYER(diacAccent, &lk_E_accent E LA(E),  RM1 RM2, l_alpha) // ´ (É if held)
 COMBO_LAYER(diacGrave, &lk_E_grave E LA(GRAVE), RM2 RM3, l_alpha) // ` (È if held)
