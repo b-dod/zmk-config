@@ -377,7 +377,10 @@ path.combo {
 <path d="M196,158 l-93,3" class="combo"/>
 <path d="M196,158 l93,-3" class="combo"/>
 <rect rx="6" ry="6" x="182" y="144" width="28" height="26" class="combo"/>
-<text x="196" y="158" class="combo tap"><tspan style="font-size: 70%">&amp;m_selword</tspan></text>
+<text x="196" y="158" class="combo tap">
+<tspan x="196" dy="-0.6em" style="font-size: 70%">&amp;m_selword</tspan><tspan x="196" dy="1.2em" style="font-size: 70%">S</tspan>
+</text>
+<text x="196" y="168" class="combo hold"><tspan style="font-size: 60%">&amp;m_selline S</tspan></text>
 </g>
 <g class="combo combopos-12">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
@@ -418,10 +421,13 @@ path.combo {
 <text x="308" y="126" class="combo tap">LG(Q)</text>
 </g>
 <g class="combo combopos-20">
-<path d="M196,130 l-94,-21" class="combo"/>
-<path d="M196,130 l94,21" class="combo"/>
-<rect rx="6" ry="6" x="182" y="116" width="28" height="26" class="combo"/>
-<text x="196" y="130" class="combo tap"><tspan style="font-size: 70%">&amp;m_findsel</tspan></text>
+<path d="M196,102 l-93,3" class="combo"/>
+<path d="M196,102 l93,-3" class="combo"/>
+<rect rx="6" ry="6" x="182" y="88" width="28" height="26" class="combo"/>
+<text x="196" y="102" class="combo tap">
+<tspan x="196" dy="-0.6em">&amp;m_find</tspan><tspan x="196" dy="1.2em">F</tspan>
+</text>
+<text x="196" y="112" class="combo hold"><tspan style="font-size: 60%">&amp;m_findsel F</tspan></text>
 </g>
 <g class="combo combopos-21">
 <path d="M644,33 l-37,2" class="combo"/>

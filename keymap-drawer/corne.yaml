@@ -1103,7 +1103,7 @@ combos:
 - p: [25, 28]
   k: LG(A)
 - p: [25, 29]
-  k: '&m_selword'
+  k: {t: '&m_selword S', h: '&m_selline S'}
   l: ['0']
 - p: [25, 26]
   k: LG(Z)
@@ -1125,8 +1125,8 @@ combos:
 - p: [17, 29]
   k: LG(Q)
   l: ['0']
-- p: [13, 29]
-  k: '&m_findsel'
+- p: [13, 17]
+  k: {t: '&m_find F', h: '&m_findsel F'}
   l: ['0']
 - p: [7, 8, 9]
   k: {t: '&typeJapan J', h: '&typeJapanese P'}
