@@ -28,6 +28,16 @@
                   ;
         )
 
+        m_find: m_find {
+            //label = "Find Selection";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+             bindings = <&macro_tap &kp LG(F)>
+                ;
+        };
+
         m_findsel: m_findsel {
             //label = "Find Selection";
             compatible = "zmk,behavior-macro";
@@ -53,6 +63,16 @@
                 ;
         };
 
+        m_selline: m_selline {
+            //label = "m_select word";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp LG(LEFT)>
+                    , <&macro_tap &kp LS(LG(RIGHT))>
+                ;
+        };
 
     ZMK_MACRO(Qu,
             wait-ms = <10>;
