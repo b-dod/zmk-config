@@ -864,14 +864,14 @@ layers:
   - ''
   - Z
   - Q
-  - LG(LS(4))
-  - LG(LS(LC(4)))
+  - Gui+Sft+ 4
+  - Gui+Sft+Ctl+ 4
   - Esc
-  - RA(4)
+  - AGr+ 4
   - $
-  - LA(LS(2))
-  - LA(3)
-  - RA(Y)
+  - Alt+Sft+ 2
+  - Alt+ 3
+  - AGr+ Y
   - ''
   - ''
   - {t: <, h: '&pairLtGt GT'}
@@ -879,7 +879,7 @@ layers:
   - {t: (, h: '&pairPar RPAR'}
   - {t: '{', h: '&pairBrc RBRC'}
   - ↹
-  - LA(1)
+  - Alt+ 1
   - {t: '*', h: Shift}
   - {t: '=', h: Gui}
   - {t: +, h: Alt}
@@ -897,11 +897,11 @@ layers:
   - ^
   - '%'
   - ''
-  - LC(LG(TAB))
-  - LA(BSPC)
-  - LA(DEL)
+  - Ctl+Gui+ ↹
+  - Alt+ ⌫
+  - Alt+ ⌦
   - {type: held}
-  - LA(0)
+  - Alt+ 0
   - {t: ▽, type: trans}
   '21':
   - ''
@@ -917,11 +917,11 @@ layers:
   - KP MINUS
   - ''
   - ''
-  - LA(LEFT)
+  - Alt+ ←
   - ←
   - ↓
   - →
-  - LA(RIGHT)
+  - Alt+ →
   - KP MULTIPLY
   - {t: KP 4, h: Shift}
   - {t: KP 5, h: Gui}
@@ -929,10 +929,10 @@ layers:
   - {t: KP PLUS, h: Ctrl}
   - ''
   - ''
-  - LG(Z)
-  - LG(X)
-  - LG(C)
-  - LG(V)
+  - Gui+ Z
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
   - SPC
   - KP COMMA
   - KP 1
@@ -991,12 +991,12 @@ layers:
   - ;
   '23':
   - ''
-  - RG(W)
-  - RG(Q)
-  - LG(LS(4))
-  - LG(LS(LC(4)))
+  - Gui+ W
+  - Gui+ Q
+  - Gui+Sft+ 4
+  - Gui+Sft+Ctl+ 4
   - Esc
-  - LG(EQUAL)
+  - Gui+ =
   - Home
   - ↑
   - Page Up
@@ -1007,30 +1007,30 @@ layers:
   - Alt
   - Gui
   - Shift
-  - RG(F)
-  - LA(LEFT)
+  - Gui+ F
+  - Alt+ ←
   - ←
   - ↓
   - →
-  - LA(RIGHT)
+  - Alt+ →
   - ''
   - ''
-  - RG(Z)
-  - RG(X)
-  - RG(C)
-  - RG(V)
-  - RG(G)
-  - LG(MINUS)
+  - Gui+ Z
+  - Gui+ C
+  - Gui+ X
+  - Gui+ V
+  - Gui+ G
+  - Gui+ -
   - End
-  - LG(0)
+  - Gui+ 0
   - Page Down
   - ''
   - ''
   - '24'
   - '&S_AppSwitch'
   - {t: '&AppSwitch', type: held}
-  - LG(LBKT)
-  - LG(RBKT)
+  - Gui+ [
+  - Gui+ ]
   - '24'
   '24':
   - BT 5
@@ -1087,7 +1087,7 @@ combos:
   k: Caps Lock
   l: ['0']
 - p: [27, 28, 29]
-  k: LG(RETURN)
+  k: Gui+ RETURN
 - p: [28, 29]
   k: RETURN
 - p: [1, 2]
@@ -1095,35 +1095,35 @@ combos:
   a: top
   o: 0.15
 - p: [1, 2, 3]
-  k: Win Prev
+  k: Sft+ ↹
 - p: [16, 17]
   k: ␣
 - p: [13, 16]
   k: Esc
 - p: [25, 28]
-  k: LG(A)
+  k: Gui+ A
 - p: [25, 29]
   k: {t: '&m_selword S', h: '&m_selline S'}
   l: ['0']
 - p: [25, 26]
-  k: LG(Z)
+  k: Gui+ Z
 - p: [25, 26, 27]
-  k: LG(LS(Z))
+  k: Gui+Sft+ Z
 - p: [26, 27]
-  k: {t: LG(C), h: LG(X)}
-- p: [26, 27, 28]
-  k: {t: LG(V), h: LG(LS(LA(V)))}
+  k: {t: Gui+ C, h: Gui+ X}
+- p: [27, 28]
+  k: {t: Gui+ V, h: Gui+Sft+Alt+ V}
 - p: [14, 26]
-  k: LG(W)
+  k: Gui+ W
   l: ['0']
 - p: [15, 27]
-  k: LG(N)
+  k: Gui+ N
   l: ['0']
 - p: [16, 28]
-  k: LG(O)
+  k: Gui+ O
   l: ['0']
 - p: [17, 29]
-  k: LG(Q)
+  k: Gui+ Q
   l: ['0']
 - p: [13, 17]
   k: {t: '&m_find F', h: '&m_findsel F'}
@@ -1138,7 +1138,7 @@ combos:
   k: Z
   l: ['0']
 - p: [7, 9]
-  k: {t: ':', h: LA(SEMI)}
+  k: {t: ':', h: Alt+ ;}
   l: ['0']
 - p: [18, 19]
   k: ;
@@ -1153,7 +1153,7 @@ combos:
   k: '`'
   l: ['0']
 - p: [6, 7]
-  k: {t: '@', h: LS(LA(SEMI))}
+  k: {t: '@', h: Sft+Alt+ ;}
   l: ['0']
 - p: [31, 33]
   k: _
@@ -1162,34 +1162,34 @@ combos:
   k: {t: '=', h: '%'}
   l: ['0']
 - p: [30, 31]
-  k: {t: LA(MINUS), h: LA(LS(MINUS))}
+  k: {t: Alt+ -, h: Alt+Sft+ -}
   l: ['0']
 - p: [30, 32]
-  k: LA(LS(MINUS))
+  k: Alt+Sft+ -
   l: ['0']
 - p: [31, 34]
   k: '~'
   l: ['0']
 - p: [19, 20]
-  k: {t: LA(E), h: '&typeEaccent E'}
+  k: {t: Alt+ E, h: '&typeEaccent E'}
   l: ['0']
 - p: [20, 21]
-  k: {t: LA(GRAVE), h: '&typeEgrave E'}
+  k: {t: Alt+ `, h: '&typeEgrave E'}
   l: ['0']
 - p: [19, 21]
-  k: {t: LA(6), h: '&typeEacute E'}
+  k: {t: Alt+ 6, h: '&typeEacute E'}
   l: ['0']
 - p: [20, 22]
-  k: {t: LA(A), h: '&typeOmacron E'}
+  k: {t: Alt+ A, h: '&typeOmacron E'}
   l: ['0']
 - p: [19, 22]
-  k: {t: LA(K), h: '&typeAring A'}
+  k: {t: Alt+ K, h: '&typeAring A'}
   l: ['0']
 - p: [31, 32]
-  k: {t: LA(U), h: '&typeUumlaut U'}
+  k: {t: Alt+ U, h: '&typeUumlaut U'}
   l: ['0']
 - p: [13, 15]
-  k: {t: LA(C), h: '&typeCedille C'}
+  k: {t: Alt+ C, h: '&typeCedille C'}
   l: ['0']
 - p: [13, 14, 15]
   k: '&Sch'
@@ -1279,26 +1279,26 @@ combos:
   k: '>'
   l: ['21']
 - p: [30, 31]
-  k: LA(MINUS)
+  k: Alt+ -
   l: ['21']
 - p: [30, 34]
   k: '~'
   l: ['21']
 - p: [31, 34]
-  k: LA(SEMI)
+  k: Alt+ ;
   l: ['21']
 - p: [7, 8]
   k: $
   l: ['21']
 - p: [6, 7]
-  k: LA(4)
+  k: Alt+ 4
   l: ['21']
 - p: [8, 9]
-  k: LS(LA(2))
+  k: Sft+Alt+ 2
   l: ['21']
 - p: [9, 10]
-  k: LA(Y)
+  k: Alt+ Y
   l: ['21']
 - p: [7, 9]
-  k: LA(3)
+  k: Alt+ 3
   l: ['21']
