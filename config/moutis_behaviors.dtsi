@@ -298,8 +298,15 @@ behaviors {
             compatible = "zmk,behavior-mod-morph";
             //label = "SlshStar";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
+            bindings = <&SlshBkslsh>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SlshBkslsh: SlshBkslsh {
+            compatible = "zmk,behavior-mod-morph";
+            //label = "SlshStar";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
         HashDllr: HashDllr {
             compatible = "zmk,behavior-mod-morph";
